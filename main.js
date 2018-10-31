@@ -19,7 +19,7 @@ function launchPuppeteerFunction() {
 
         try {
             const browser = await Apify.launchPuppeteer({
-                proxyUrl: `http://groups-RESIDENTIAL:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`,
+                proxyUrl: `http://groups-${INPUT.proxyGroup}:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`,
                 liveView: true,
                 //ignoreHTTPSErrors: true,
                 args: ['--disable-web-security']

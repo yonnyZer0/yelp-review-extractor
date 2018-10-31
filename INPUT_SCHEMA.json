@@ -3,6 +3,13 @@
     "type": "object",
     "schemaVersion": 1,
     "properties": {
+        "proxyGroup":{
+            "title": "Proxy group",
+            "type": "string",
+            "prefill": "RESIDENTIAL",
+            "description": "Proxy group to use. Stable only with residential proxies for now.",
+            "editor": "textfield"
+        },
         "mode": {
             "title": "Mode",
             "type": "string",
