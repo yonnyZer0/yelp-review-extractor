@@ -1,6 +1,7 @@
 {
     "title": "Extractor settings",
     "type": "object",
+    "schemaVersion": 1,
     "properties": {
         "mode": {
             "title": "Mode",
