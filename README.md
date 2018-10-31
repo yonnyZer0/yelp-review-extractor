@@ -31,6 +31,7 @@ Yelp crawler which is checking for the latest reviews.
 <p>
 -> "proxyGroup" [used Apify proxy group]
 </p><p>
-    -> "cutoff_date" [publish date of the latest known review, if not set -> "0000-00-00" date used]</p><p>
+    -> "cutoff_date" [publish date of the latest known review, if not set -> "0000-00-00"(YYYY-MM-DD) date used]</p>
+    <p>
     -> "ext_id" [returned in result, if not set -> returned null]
 </p>
