@@ -6,15 +6,15 @@ Yelp crawler which is checking for the latest reviews.
 <p>
 -> "mode" [currently supported mode of this crawler]
 </p><p>
--> "url_list" [array of restaurant configs]
+-> "url_list" [array of restaurant configs]</p><p>
     -> "URL" [yelp url of restaurant]
 </p>
 <b>Optional p.</b>
 <p>
 -> "proxyGroup" [used Apify proxy group]
 </p><p>
--> ("url_list") 
-    -> "cutoff_date" [if not set -> "0000-00-00" date used]
+-> ("url_list")</p><p>
+    -> "cutoff_date" [if not set -> "0000-00-00" date used]</p><p>
     -> "ext_id" [if not set -> returned null]
 </p>
 <pre>
