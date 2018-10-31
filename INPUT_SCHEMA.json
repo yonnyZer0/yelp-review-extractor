@@ -12,7 +12,7 @@
         },
         "url_list": {
             "title": "Restaurant configs",
-            "type": "json",
+            "type": "object",
             "prefill": [{
                 "URL": "https://www.yelp.com/biz/ffionas-restaurant-london",
                 "cutoff_date": "2017-01-17",
