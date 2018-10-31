@@ -14,23 +14,6 @@ const pad = async (d) => {
     return (d < 10) ? '0' + d.toString() : d.toString();
 }
 
-function launchPuppeteerFunction() {
-    return new Promise(async (resolve, reject) => {
-
-        try {
-            const browser = await Apify.launchPuppeteer({
-                proxyUrl: `http://groups-${INPUT.proxyGroup}:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`,
-                liveView: true,
-                //ignoreHTTPSErrors: true,
-                args: ['--disable-web-security']
-            });
-
-            resolve(browser);
-        } catch (error) {
-            reject(error);
-        }
-    });
-}
 
 async function gotoFunction({
     request,
@@ -136,7 +119,7 @@ Apify.main(async () => {
     const crawler = new Apify.PuppeteerCrawler({
         requestQueue,
         gotoFunction,
-        launchPuppeteerFunction,
+        proxyUrl: [`http://groups-${INPUT.proxyGroup}:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`],
 
         // This page is executed for each request.
         // If request failes then it's retried 3 times.
