@@ -3,23 +3,26 @@ Yelp crawler which is checking for the latest reviews.
 
 ## Sample input
 <b>Required parameters</b>
+<p>
 -> "mode"
 -> "url_list" -> "URL"
-
+</p>
 <b>Optional p.</b>
+<p>
 -> "proxyGroup"
 -> ("url_list") -> "cutoff_date", "ext_id"
-
+</p>
 <b>Parameter explanation</b>
+<p>
 "proxyGroup" [used Apify proxy group]
 "mode" [currently supported mode of this crawler]
 "url_list" [array of restaurant configs]
 
 "URL" [yelp url of restaurant]
-"cutoff_date"[publish date of the last known review] - if not set -> "0000-00-00" date is set
+"cutoff_date"[publish date of the last known review] - if not set -> "0000-00-00" date used
 "ext_id" [optional external id returned in result] - if not set -> returned null
 
-
+</p>
 <pre>
 {
     "proxyGroup": "RESIDENTIAL",
