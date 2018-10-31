@@ -119,7 +119,7 @@ Apify.main(async () => {
     const crawler = new Apify.PuppeteerCrawler({
         requestQueue,
         gotoFunction,
-        proxyUrl: [`http://groups-${INPUT.proxyGroup}:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`],
+        proxyUrls: INPUT.proxyGroup ? [`http://groups-${INPUT.proxyGroup}:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`] : [],
 
         // This page is executed for each request.
         // If request failes then it's retried 3 times.

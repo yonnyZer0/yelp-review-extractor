@@ -20,7 +20,7 @@
         "url_list": {
             "title": "Restaurant configs",
             "type": "array",
-            "description": "Restaurant review settings. URL is required.",
+            "description": "Array of restaurant links. URL is required parameter.",
             "prefill": [{
                 "URL": "https://www.yelp.com/biz/ffionas-restaurant-london",
                 "cutoff_date": "2017-01-17",
