@@ -12,7 +12,8 @@
         },
         "url_list": {
             "title": "Restaurant configs",
-            "type": "object",
+            "type": "array",
+            "description": "Restaurant review settings. URL is required.",
             "prefill": [{
                 "URL": "https://www.yelp.com/biz/ffionas-restaurant-london",
                 "cutoff_date": "2017-01-17",
