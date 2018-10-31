@@ -8,7 +8,7 @@
             "type": "string",
             "prefill": "recheck",
             "description": "Enter supported mode.",
-            "editor": "field"
+            "editor": "textfield"
         },
         "url_list": {
             "title": "Restaurant configs",
