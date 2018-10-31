@@ -1,0 +1,16 @@
+{
+  "name": "yelp-extract-reviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "apify": "^0.8.16",
+    "delay": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

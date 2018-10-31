@@ -1,0 +1,25 @@
+{
+    "title": "Extractor settings",
+    "type": "object",
+    "schemaVersion": "1",
+    "properties": {
+        "mode": {
+            "title": "Mode",
+            "type": "string",
+            "prefill": "recheck",
+            "description": "Enter supported mode.",
+            "editor": "field"
+        },
+        "url_list": {
+            "title": "Restaurant configs",
+            "type": "array",
+            "prefill": [{
+                "URL": "https://www.yelp.com/biz/ffionas-restaurant-london",
+                "cutoff_date": "2017-01-17",
+                "ext_id": "random_id_returned_in_results"
+            }],
+            "editor": "json"
+        }
+    },
+    "required": ["mode", "url_list"]
+}
