@@ -14,7 +14,7 @@ Yelp crawler which is checking for the latest reviews.
 </p><p>
 -> ("url_list") -> "cutoff_date", "ext_id"
 </p>
-<b>Parameter explanation</b>
+##Parameter explanation
 <p>
 "proxyGroup" [used Apify proxy group]
 </p><p>
