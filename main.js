@@ -37,6 +37,8 @@ async function gotoFunction({
     page.on('request', (request) => {
         const resourceType = request.resourceType();
 
+        console.log( request.url() );
+
         if (ignored.includes(resourceType)) {
             request.abort();
 
