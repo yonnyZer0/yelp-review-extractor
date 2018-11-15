@@ -42,7 +42,11 @@ async function gotoFunction({
         '.doubleclick.net',
         '.cloudflare.com',
         'https://connect.facebook.net',
-        'https://www.google-analytics.com/'
+        'https://www.google-analytics.com/',
+        'https://match.adsrvr.org',
+        'https://tags.bluekai.com/',
+        'https://ib.adnxs.com/',
+        'https://insight.adsrvr.org'
     ];
 
     page.on('request', (request) => {
