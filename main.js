@@ -47,7 +47,7 @@ async function gotoFunction({
         } else {
             request.continue();
             //console.log(resourceType);
-            console.log(resourceURL);
+            console.log('TYPE:', resourceType, ' !! URL:', resourceURL);
         }
     });
 
