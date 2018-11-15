@@ -42,7 +42,7 @@ async function gotoFunction({
 
         console.log(resourceURL);
 
-        if (ignored.includes(resourceType) || ignored_urls.includes(resourceURL)) {
+        if (ignored.includes(resourceType) || ignored_urls.some((item) => resourceURL.includes(item))) {
             request.abort();
 
         } else {
