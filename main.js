@@ -40,14 +40,14 @@ async function gotoFunction({
         const resourceType = request.resourceType();
         const resourceURL = request.url();
 
-        console.log(resourceURL);
-
         if (ignored.includes(resourceType) || ignored_urls.some((item) => resourceURL.includes(item))) {
             request.abort();
 
+
         } else {
             request.continue();
-            console.log(resourceType);
+            //console.log(resourceType);
+            console.log(resourceURL);
         }
     });
 
