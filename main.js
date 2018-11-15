@@ -29,7 +29,7 @@ async function gotoFunction({
     }
 
     const ignored = [
-        'script',
+        //'script',
         'image',
         'stylesheet'
     ];
