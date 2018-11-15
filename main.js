@@ -30,8 +30,8 @@ async function gotoFunction({
 
     const ignored = [
         //'script',
-        'image',
-        'stylesheet'
+        //'image',
+        //'stylesheet'
     ];
 
     page.on('request', (request) => {
