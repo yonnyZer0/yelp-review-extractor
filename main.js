@@ -57,6 +57,8 @@ async function gotoFunction({
     await Apify.utils.puppeteer.injectJQuery(page);
     await Apify.utils.puppeteer.injectUnderscore(page);
 
+    await delay(5000);
+
     return response;
 }
 
