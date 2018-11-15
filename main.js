@@ -28,39 +28,35 @@ async function gotoFunction({
         request.url = request.url + '&sort_by=date_desc';
     }
 
-    page.on('request', async (rq) => {
-        const url = rq.url();
+    const ignored = [
+        'script',
+        'image',
+        'stylesheet'
+    ];
 
-        const ignored = [
-            'js_tracking',
-            'assets/chat',
-            'ajax/libs/jquery/3',
-            'gtag/js',
-            'bootstrap',
-            'analytics.js',
-            'atrk.js',
-            'favicon.ico',
-            'sharethis.com',
-            'image'
-        ];
+    page.on('request', (request) => {
+        const resourceType = request.resourceType();
 
-        const abort = ignored.some((item) => url.includes(item));
+        if (ignored.includes(resourceType)) {
+            request.abort();
 
-        if (abort) {
-            await rq.abort('aborted');
         } else {
-            await rq.continue();
+            request.continue();
+            console.log(resourceType);
         }
+    });
+
+
+
+    const response = await page.goto(request.url, {
+        timeout: 120000,
+        waitUntil: ['domcontentloaded']
     });
 
     await Apify.utils.puppeteer.hideWebDriver(page);
     await Apify.utils.puppeteer.injectJQuery(page);
     await Apify.utils.puppeteer.injectUnderscore(page);
 
-    const response = await page.goto(request.url, {
-        timeout: 120000,
-        waitUntil: ['domcontentloaded']
-    });
     return response;
 }
 
@@ -120,6 +116,7 @@ Apify.main(async () => {
         requestQueue,
         gotoFunction,
         proxyUrls: INPUT.proxyGroup ? [`http://groups-${INPUT.proxyGroup}:${process.env.APIFY_PROXY_PASSWORD}@proxy.apify.com:8000`] : [],
+        maxConcurrency: 1,
 
         // This page is executed for each request.
         // If request failes then it's retried 3 times.

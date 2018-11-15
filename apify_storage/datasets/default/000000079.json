@@ -1,0 +1,15 @@
+{
+  "name": "Pink Onion",
+  "address": "64 14th St, San Francisco, CA 94103",
+  "longitude": -122.4148932,
+  "latitude": 37.7687832,
+  "types": "Pizza|Italian|Gastropubs",
+  "webpage": "pinkonionpizza.com",
+  "price_range": 2,
+  "restaurant_url": "https://www.yelp.com/biz/pink-onion-san-francisco",
+  "rev_url": "https://www.yelp.com/biz/pink-onion-san-francisco?hrid=RBbicndT9h20-9wfK9w37A",
+  "author": "Dave S.",
+  "description": "This place is excellent! We went here last weekend and we ordered three different kinds of pizzas. They were very tasty and service is outstanding! If you go to the city, I highly recommend this place!",
+  "datePublished": "2018-07-25",
+  "ratingValue": 5
+}

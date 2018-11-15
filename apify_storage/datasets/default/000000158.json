@@ -1,0 +1,15 @@
+{
+  "name": "Pink Onion",
+  "address": "64 14th St, San Francisco, CA 94103",
+  "longitude": -122.4148932,
+  "latitude": 37.7687832,
+  "types": "Pizza|Italian|Gastropubs",
+  "webpage": "pinkonionpizza.com",
+  "price_range": 2,
+  "restaurant_url": "https://www.yelp.com/biz/pink-onion-san-francisco",
+  "rev_url": "https://www.yelp.com/biz/pink-onion-san-francisco?hrid=4YDOEz-Dk6f9IgpY3A-O9A",
+  "author": "Patrick M.",
+  "description": "Service was friendly.  Pizza and Caprese salad were excellent.  The pasta had a weird consistency and was pretty bland.  The meatballs were solid, but think they'd be better without the pine nuts.",
+  "datePublished": "2018-04-16",
+  "ratingValue": 4
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Ffiona’s Restaurant",
+  "address": "51 Kensington Church Street, London W8 4BA, United Kingdom",
+  "longitude": -0.192783395566043,
+  "latitude": 51.50405773515,
+  "types": "British",
+  "webpage": "ffionas.com",
+  "price_range": 2,
+  "restaurant_url": "https://www.yelp.com/biz/ffionas-restaurant-london",
+  "ext_id": "212",
+  "rev_url": "https://www.yelp.com/biz/ffionas-restaurant-london?hrid=JRB4d58YTct7m1tRXV49wA",
+  "author": "Slava K.",
+  "description": "Great food, Great service, Great atmosphere. The two waitresses were exceptionally polite and the food was very well proportioned and prepared. I would recommend the Chicken Kiev and the Toffee.",
+  "datePublished": "2018-05-16",
+  "ratingValue": 5
+}
