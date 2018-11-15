@@ -34,7 +34,16 @@ async function gotoFunction({
         'stylesheet'
     ];
 
-    const ignored_urls = ['https://s3-media', 'https://cdnjs.cloudflare.com/ajax/libs/react/', 'https://sb.', 'https://idsync.'];
+    const ignored_urls = [
+        'https://s3-media',
+        'https://cdnjs.cloudflare.com/ajax/libs/react/',
+        'https://sb.',
+        'https://idsync.',
+        '.doubleclick.net',
+        '.cloudflare.com',
+        'https://connect.facebook.net',
+        'https://www.google-analytics.com/'
+    ];
 
     page.on('request', (request) => {
         const resourceType = request.resourceType();
