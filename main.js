@@ -47,7 +47,7 @@ async function gotoFunction({
         'https://tags.bluekai.com/',
         'https://ib.adnxs.com/',
         'https://insight.adsrvr.org',
-        'https://js.adsrvr.org/'
+        'https://js.adsrvr.org/', 'cdnbasket.net/', '.adroll.com/', 'ids.cdnwidget.com/'
     ];
 
     page.on('request', (request) => {
