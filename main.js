@@ -34,12 +34,15 @@ async function gotoFunction({
         //'stylesheet'
     ];
 
+    const ignored_urls = ['https://s3-media'];
+
     page.on('request', (request) => {
         const resourceType = request.resourceType();
+        const resourceURL = request.url();
 
-        console.log( request.url() );
+        console.log(resourceURL);
 
-        if (ignored.includes(resourceType)) {
+        if (ignored.includes(resourceType) || ignored_urls.includes(resourceURL)) {
             request.abort();
 
         } else {
