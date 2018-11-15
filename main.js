@@ -30,11 +30,11 @@ async function gotoFunction({
 
     const ignored = [
         //'script',
-        //'image',
-        //'stylesheet'
+        'image',
+        'stylesheet'
     ];
 
-    const ignored_urls = ['https://s3-media'];
+    const ignored_urls = ['https://s3-media', 'https://cdnjs.cloudflare.com/ajax/libs/react/', 'https://sb.', 'https://idsync.'];
 
     page.on('request', (request) => {
         const resourceType = request.resourceType();
