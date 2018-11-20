@@ -1,6 +1,7 @@
 # Yelp review extractor
 Yelp crawler which checks for the newest restaurant reviews.
-Only "recheck" mode is currently supported what means you can scrape only concrete restaurants.
+
+Only "recheck" mode is currently supported what means you can scrape only concrete restaurants by urls.
 Because of active proxy banning is recommended to scrape pages using RESIDENTIAL proxies.
 
 ## Sample input
