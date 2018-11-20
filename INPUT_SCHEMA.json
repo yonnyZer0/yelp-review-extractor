@@ -20,7 +20,7 @@
         "url_list": {
             "title": "Restaurant list",
             "type": "array",
-            "description": "Array of restaurant links. \"URL\" is required parameter. \"cutoff_date\" is the oldest date of restaurant which will be scraped. \"ext_id\" is returned in results.",
+            "description": "Array of restaurant links. \"URL\" is required parameter. \"cutoff_date\" is the oldest date of restaurant which will be scraped. \"ext_id\" will be returned in results.",
             "prefill": [{
                     "URL": "https://www.yelp.com/biz/ffionas-restaurant-london",
                     "cutoff_date": "2017-01-17",
