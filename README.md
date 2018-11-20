@@ -4,6 +4,12 @@ Yelp crawler which checks for the newest restaurant reviews.
 Only "recheck" mode is currently supported what means you can scrape only concrete restaurants by urls.
 Because of active proxy banning is recommended to scrape pages using RESIDENTIAL proxies.
 
+
+Parameters "cutoff_date" and "ext_id" are not required.
+
+"cutoff_date" defines the oldest review you wanna to scrape. If not set then all restaurant reviews are extracted.
+"ext_id" is returned in results without the change. Can be used for storing your internal key.
+
 ## Sample input
 
 <pre>
