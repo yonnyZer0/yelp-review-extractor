@@ -7,25 +7,35 @@
             "title": "Proxy group",
             "type": "string",
             "prefill": "RESIDENTIAL",
-            "description": "Proxy group to use. Stable only with residential proxies for now.",
+            "description": "Proxy group to use. Stable only with \"RESIDENTIAL\" proxy group for now.",
             "editor": "textfield"
         },
         "mode": {
             "title": "Mode",
             "type": "string",
             "prefill": "recheck",
-            "description": "Enter supported mode.",
+            "description": "Enter supported mode. The crawler is currently able to run only in \"recheck\" mode.",
             "editor": "textfield"
         },
         "url_list": {
-            "title": "Restaurant configs",
+            "title": "Restaurant list",
             "type": "array",
-            "description": "Array of restaurant links. URL is required parameter.",
+            "description": "Array of restaurant links. \"URL\" is required parameter. \"cutoff_date\" is the oldest date of restaurant which will be scraped. \"ext_id\" is returned in results.",
             "prefill": [{
-                "URL": "https://www.yelp.com/biz/ffionas-restaurant-london",
-                "cutoff_date": "2017-01-17",
-                "ext_id": "random_id_returned_in_results"
-            }],
+                    "URL": "https://www.yelp.com/biz/ffionas-restaurant-london",
+                    "cutoff_date": "2017-01-17",
+                    "ext_id": "a10"
+                },
+                {
+                    "URL": "https://www.yelp.com/biz/pink-onion-san-francisco",
+                    "cutoff_date": "2018-03-29",
+                    "ext_id": "a23"
+                },
+                {
+                    "URL": "https://www.yelp.com/biz/farmhouse-kitchen-thai-cuisine-san-francisco",
+                    "cutoff_date": "2018-03-29",
+                    "ext_id": "a24"
+                }],
             "editor": "json"
         }
     },

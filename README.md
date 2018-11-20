@@ -1,5 +1,5 @@
 # Yelp review extractor
-Yelp crawler checking for the latest reviews.
+Yelp crawler which checks for the latest reviews.
 
 ## Sample input
 
